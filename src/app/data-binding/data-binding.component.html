@@ -1,0 +1,27 @@
+<div align="center">
+    <h4>One Way Data Binding</h4>
+    <div>
+        <p>1. Interpolation</p>
+        <p><b>{{name}}</b> from {{topic}}</p>
+    </div>
+    <div>
+        <p>2. Property Binding</p>
+        <input type="text" name="" id="" [value]="topic">
+        <div style="height: 160px; width: 250px; border: 1px solid black; margin-top: 20px;">
+            <img [src]="image" alt="" style="height: 100%; width: 100%;">
+        </div>
+    </div>
+    <div>
+        <p>3. Event Binding</p>
+        <button (click)="onSave()">Save</button>
+    <select (change)="onChange()" style="margin-left: 6px;">
+            <option value="Country">Country</option>
+            <option value="India">India</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Spain">Spain</option>
+    </select>
+    </div>
+
+    
+</div>
