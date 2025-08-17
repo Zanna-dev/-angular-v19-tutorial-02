@@ -16,9 +16,23 @@ export class AttributeDirectivesComponent {
   this.textColor = color;
   }
 
+  styleColor: string = 'text-orange';
+  updateColor(ngStyleColor: string) {
+    this.styleColor = ngStyleColor;
+  }
+
   // 2
   isTextGreen: boolean = false;
+  isTextOrage: boolean = false;
 
   // 3
   userClass : string = '';
+
+  customClass : any = {
+     'color':'yellow',
+    'height':'150px',
+    'width':'400px',
+    'border':'1px solid black'
+  }
+
 }
