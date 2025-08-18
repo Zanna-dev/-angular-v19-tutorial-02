@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { UserComponent } from './user/user.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
@@ -13,6 +13,9 @@ import { LinkedSignalComponent } from './linked-signal/linked-signal.component';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, 
+    RouterLink,
+    RouterLinkActive,
+  
     // UserComponent, 
     // DataBindingComponent
     //DirectivesComponent,
@@ -21,7 +24,7 @@ import { LinkedSignalComponent } from './linked-signal/linked-signal.component';
     // StructuralDirectiveNgswitchVsSwitchComponent
     // AttributeDirectivesComponent
     // SignalsComponent
-    LinkedSignalComponent
+    // LinkedSignalComponent
    ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
