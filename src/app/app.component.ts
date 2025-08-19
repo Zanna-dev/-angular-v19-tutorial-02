@@ -25,6 +25,7 @@ import { LinkedSignalComponent } from './linked-signal/linked-signal.component';
     // AttributeDirectivesComponent
     // SignalsComponent
     // LinkedSignalComponent
+    
    ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
