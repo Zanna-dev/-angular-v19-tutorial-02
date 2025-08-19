@@ -6,7 +6,7 @@ import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-template-driven-form',
-  imports: [FormsModule, JsonPipe],
+  imports: [FormsModule],
   templateUrl: './template-driven-form.component.html',
   styleUrl: './template-driven-form.component.scss'
 })
