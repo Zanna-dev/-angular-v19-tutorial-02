@@ -51,7 +51,7 @@
                 [(ngModel)]="userObject.email" email required>
                     @if ((emailid?.dirty || fname?.touched)) {
             @if(emailid?.errors?.['required']){
-            <small class="text-danger">Email <address></address> is required</small>
+            <small class="text-danger">Email <address></address>Email is required</small>
             }
             @if(emailid?.errors?.['email']){
             <small class="text-danger">Please enter a valid email address</small>
