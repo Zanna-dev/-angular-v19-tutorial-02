@@ -1,5 +1,12 @@
 <div align="center">
-    <h4>One Way Data Binding</h4>
+      @if(isEligible){
+       <h4 class="text-success">You are eligible for a premium subscription</h4>
+    }@else {
+        <h4 class="text-danger">You are not eligible for a premium subscription</h4>
+    }
+
+    <h2>User Name : {{dummyData.name}}</h2>
+    <!-- <h4>One Way Data Binding</h4>
     <div>
         <p>1. Interpolation</p>
         <p><b>{{name}}</b> from {{topic}}</p>
@@ -25,7 +32,7 @@
 
     <h4>Two Way Data Binding</h4>
     <div>
-        <input type="text" [(ngModel)]="random">
-        {{random}}
-    </div>
+        <input type="text" [(ngModel)]="random"> -->
+        <!-- {{random}}
+    </div> -->
 </div>
