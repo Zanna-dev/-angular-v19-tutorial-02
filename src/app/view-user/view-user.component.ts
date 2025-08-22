@@ -1,10 +1,11 @@
 import { Component, Inject } from '@angular/core';
 import { CrudService } from '../crud.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ResusableComponent } from '../resusable/resusable.component';
 
 @Component({
   selector: 'app-view-user',
-  imports: [],
+  imports: [ResusableComponent],
   templateUrl: './view-user.component.html',
   styleUrl: './view-user.component.scss'
 })
