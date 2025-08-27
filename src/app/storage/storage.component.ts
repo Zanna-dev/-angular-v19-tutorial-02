@@ -53,19 +53,19 @@ export class StorageComponent {
   }
 
 
-  // setCookie() {
-  //   this.cookie.set('token1', '12345',1);
-  //   this.cookie.set('token2', 'xyz');
-  // }
+  setCookie() {
+    this.cookie.set('token1', '12345',1);
+    this.cookie.set('token2', 'xyz');
+  }
 
-  // getCookie() {
-  //   this.cookieValue = this.cookie.get('token1');
-  // }
+  getCookie() {
+    this.cookieValue = this.cookie.get('token1');
+  }
 
-  // deleteCookie() {
-  //   // this.cookie.delete('token1');
-  //   this.cookie.deleteAll();
-  //   this.cookieValue = "";
-  // }
+  deleteCookie() {
+    // this.cookie.delete('token1');
+    this.cookie.deleteAll();
+    this.cookieValue = "";
+  }
 
 }
