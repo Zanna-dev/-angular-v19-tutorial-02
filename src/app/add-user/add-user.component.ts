@@ -11,6 +11,8 @@ import { ResusableComponent } from '../resusable/resusable.component';
   templateUrl: './add-user.component.html',
   styleUrl: './add-user.component.scss'
 })
+
+
 export class AddUserComponent {
 
    parentProperty : string = "Add-User : Kindly add a new user";
