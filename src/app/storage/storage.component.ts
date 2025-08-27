@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-storage',
@@ -8,11 +9,11 @@ import { Component } from '@angular/core';
 })
 export class StorageComponent {
 
-
+  constructor(private cookie : CookieService) {}
 
   sessionValue: any = "";
   localValue: any = "";
-  // cookieValue: string = "";
+  cookieValue: string = "";
 
   setSession() {
     sessionStorage.setItem('name', 'session');
@@ -33,22 +34,38 @@ export class StorageComponent {
   }
 
 
-  // setLocal() {
-  //   localStorage.setItem('username', 'local');
-  //   localStorage.setItem('password', 'local123');
+  setLocal() {
+    localStorage.setItem('username', 'local');
+    localStorage.setItem('password', 'local123');
+  }
+
+  getLocal() {
+    this.localValue = localStorage.getItem('username');
+  }
+
+  removeLocal() {
+    localStorage.removeItem('password');
+  }
+
+  clearLocal() {
+    localStorage.clear();
+    this.localValue = "";
+  }
+
+
+  // setCookie() {
+  //   this.cookie.set('token1', '12345',1);
+  //   this.cookie.set('token2', 'xyz');
   // }
 
-  // getLocal() {
-  //   this.localValue = localStorage.getItem('username');
+  // getCookie() {
+  //   this.cookieValue = this.cookie.get('token1');
   // }
 
-  // removeLocal() {
-  //   localStorage.removeItem('password');
-  // }
-
-  // clearLocal() {
-  //   localStorage.clear();
-  //   this.localValue = "";
+  // deleteCookie() {
+  //   // this.cookie.delete('token1');
+  //   this.cookie.deleteAll();
+  //   this.cookieValue = "";
   // }
 
 }
